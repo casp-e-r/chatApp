@@ -8,10 +8,10 @@ import io from "socket.io-client";
 import { MdArrowBackIosNew, MdGroups, MdSegment, MdSend } from 'react-icons/md';
 import { isLastMessage, isSameSender } from '../../Util';
 import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
 
 
 const ENDPOINT="http://localhost:9000"
+// const ENDPOINT='https://hibye-mern.herokuapp.com/'
 var socket,selectedChatCompare
 
 function Chat() {
