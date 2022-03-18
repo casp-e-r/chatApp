@@ -29,7 +29,7 @@ function StarterPage() {
     <div className="mx-1 lg:mx-2 p-14 w-full flex justify-center content-center bg-gradient-to-l from-green-400/20 to-lime-400/20 sm:rounded-lg backdrop-blur-lg backdrop-filter bg-clip-padding shadow-lg rounded-3xl">
     <motion.div variants={container} initial='hidden' animate='show'  className=" rounded  w-1/2 h-full my-auto flex flex-col justify-center content-center lg:text-xl   ">
         <h1 className=' flex gap-3'   ><SiLivechat  size={33} className='text-green-600/70 font-sans font-normal '/> HiBye</h1>
-            <div className='font-extrabold ' >
+            <div className='font-bolder mt-4 ' >
 
                   <motion.h1 variants={item}  >Let's Connect</motion.h1>
                   <motion.h1 variants={item}>with Your Friends</motion.h1>

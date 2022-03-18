@@ -1,14 +1,12 @@
 
 import './App.css';
-import SideBar from './Components/SideBar/SideBar';
-import {BrowserRouter ,Route, Redirect, Routes, useLocation, useNavigate} from "react-router-dom";
+import {BrowserRouter } from "react-router-dom";
 import View from './View/View';
 
 import Auth from './Components/Auth';
 import { useEffect, useState } from 'react';
 import ChatProvider from './ChatProvideContext';
-import Chat from './Components/ChatScreen/Chat';
-import StarterPage from './Components/StarterPage';
+
 
 
 function App() {
@@ -29,6 +27,7 @@ function App() {
   
   return (
     <div className="App h-screen no-scrollbar">
+      <link rel="shortcut icon" href="/s.png" />
       <BrowserRouter>
       <ChatProvider>
       {state ? <View/> : <Auth/>}
