@@ -48,18 +48,22 @@ const httpServer = createServer(app);
 
 httpServer.listen(port, ()=>console.log(`listening on localhost :${port}`))
 
-// const __dirname = path.resolve();
+const __dirname1 = path.resolve();
+console.log(process.env.NODE_ENV);
+console.log(process.env.JWT_SECRET);
+console.log(process.env.PORT);
 if(process.env.NODE_ENV === 'production'){
-  // app.use(express.static(path.join(__dirname,"/chat-react/build")))
-  app.use(express.static("../chat-react/build"))
-  // console.log('h');
+  app.use(express.static(path.join(__dirname1,"/chat-react/build")))
+  // app.use(express.static("../chat-react/build"))
+  console.log('h');
   app.get('*',(req,res)=> {
-    res.sendFile(path.resolve(__dirname, 'chat-react', 'build', 'index.html'))
+    res.sendFile(path.resolve(__dirname1, 'chat-react', 'build', 'index.html'))
   })
   app.get('/', (req, res) => res.send('ho!'))
 
 }else{
   app.get("/",(req,res)=>{
+    console.log('jj');
     res.send("API running")
   })
 }

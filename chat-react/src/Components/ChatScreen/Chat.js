@@ -10,8 +10,8 @@ import { isLastMessage, isSameSender } from '../../Util';
 import 'react-responsive-modal/styles.css';
 
 
-// const ENDPOINT="http://localhost:9000"
-const ENDPOINT='https://hibye-mern.herokuapp.com/'
+const ENDPOINT="http://localhost:9000/"
+// const ENDPOINT='https://hibye-mern.herokuapp.com/'
 var socket,selectedChatCompare
 
 function Chat() {
