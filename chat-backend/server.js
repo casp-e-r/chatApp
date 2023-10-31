@@ -26,7 +26,7 @@ const port =process.env.PORT || 9000
 
 
 mongoose.connect('mongodb+srv://aswin:ynwa20@cluster0.m74b3.mongodb.net/chatDatabase?retryWrites=true&w=majority').then(console.log('DB connection established'))
-
+mongoose.set('strictQuery', false);
 
 
 // app.get('/',(req,res)=>{res.status(200).send('hello world')})
